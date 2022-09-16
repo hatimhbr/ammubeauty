@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c0b6790ccc.js" crossorigin="anonymous"></script>
+    <title>Makeup by Amatullah</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Raleway:wght@400;400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="flip-card-container">
+      <div class="flip-card">
+        <div class="flip-card-front">
+          <img src="./assets/imgs/front_card.jpg" alt="Amatullah Mufaddal"> 
+        </div>
+
+        <div class="flip-card-back">
+
+    <div class="card">
+      <figure class="header">
+        <img src="./assets/imgs/logo_makeupbyamatullah.jpg">
+           <figcaption>
+             <h3>Amatullah Mufaddal</h3>
+             <p>Makeup Artist</p>
+           </figcaption>
+      </figure>
+
+      <div class="body">
+        <ul>
+          <li>
+            <a href="tel:9629911687">
+              <h3 class="datos">Phone</h3>
+              <p>+91 96299 11687</p>
+              <i class="fas fa-phone-volume"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://api.whatsapp.com/send?phone=919629911687" target="_blank">
+              <h3 class="datos">WhatsApp</h3>
+              <p>+91 96299 11687</p>
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>  
+          </li>
+          <li>
+            <a href="mailto:amucool523@gmail.com">
+              <h3 class="datos">E-mail</h3>
+              <p>amucool523@gmail.com</p>
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.ammubeauty.ml" target="_blank">
+              <h3 class="datos">Website</h3>
+              <p>www.ammubeauty.ml</p>
+              <i class="fa-solid fa-globe"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer">
+        <ul>
+          <li>
+            <a href="https://g.co/kgs/3CdBL1" target="_blank">
+               <i class="fa-solid fa-location-dot"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/makeup_by_amatullah/?app=fbl">
+               <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a onclick="return nativeShare();">
+              <i class="fa-solid fa-share-nodes"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+                <label for="btn-modal" class="lbl-modal">
+              <i class="fa-solid fa-qrcode"></i>
+            </label>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+    <!--Prueba de pop up-->
+
+  <input type="checkbox" id="btn-modal">
+	<div class="modal">
+		<div class="contenedor">
+			<header class="titleQr">Scan QR for Details</header>
+			<label for="btn-modal">X</label>
+			<div class="contenido">
+				<h3><!-- Agregar un titulo --></h3>
+				<img src="./assets/imgs/qr_amatullah.jpg" alt="QR">
+			</div>
+		</div>
+	</div>
+
+
+
+  <script>
+		var nativeShare = function() {
+		   if (navigator.share) { 
+			  navigator.share({
+				 title: "Amatullah Mufaddal",
+				 text: "Makeup Artist specialist in Bridal Makeup",
+				 url: "https://www.ammubeauty.ml", 
+			  }) 
+		   }
+		   return false;
+		}
+		</script>
+  </body>
+
+</html>
+
+
